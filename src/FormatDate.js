@@ -20,16 +20,16 @@ export default function FormatDate(props) {
       minutes = `0${minutes}`;
     }
     return (
-      <div>
+      <span>
         {hour}:{minutes}
-      </div>
+      </span>
     );
   } else if (props.daily) {
     let daily = new Date(props.daily * 1000);
 
     let weekday = days[daily.getDay()];
 
-    return <div>{weekday}</div>;
+    return <span>{weekday}</span>;
   } else if (props.hourly) {
     // let hourly = new Date(props.hourly * 1000);
     let d = new Date(props.hourly * 1000);
@@ -44,7 +44,7 @@ export default function FormatDate(props) {
     } else {
       hour = `${hour} PM`;
     }
-    return <div>{hour}</div>;
+    return <span>{hour}</span>;
   } else {
     let now = new Date(props.update * 1000);
     let localTime = now.getTime();
@@ -65,6 +65,6 @@ export default function FormatDate(props) {
     } else {
       hour = `Have a wonderful night darling`;
     }
-    return <div>{hour}</div>;
+    return <span>{hour}</span>;
   }
 }

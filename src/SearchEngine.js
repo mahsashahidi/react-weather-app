@@ -91,7 +91,7 @@ export default function SearchEngine(props) {
     }
   }
   useEffect(() => {
-    search();
+    setDayInfo({ ready: false });
   }, [unit]);
   if (dayInfo.ready) {
     return (
