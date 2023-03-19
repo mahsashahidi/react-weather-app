@@ -1,0 +1,8 @@
+.Forecast .mintemp {
+  color: rgb(200, 200, 200);
+}
+@media (max-width: 576px) {
+  .forecastIcons {
+    width: 40px;
+  }
+} ;

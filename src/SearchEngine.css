@@ -1,0 +1,45 @@
+.SearchEngine {
+  text-align: center;
+}
+
+.SearchEngine button {
+  background: transparent !important;
+  border: none;
+}
+
+.SearchEngine .form-control:focus {
+  box-shadow: none !important;
+}
+
+.SearchEngine .unitStyle {
+  font-size: 30px;
+  color: coral !important;
+  text-shadow: 0 0 2px white, 0 0 2px white, 0 0 2px white, 0 0 2px white;
+}
+
+.SearchEngine .unitStyle:hover {
+  background: rgba(255, 255, 255, 0.125) !important;
+  transition: 0.3s ease-in-out;
+}
+.SearchEngine .searchBox {
+  border: 1px solid rgb(179, 179, 179) !important;
+  background: rgba(114, 12, 105, 0.212) !important;
+}
+.SearchEngine .inputClass {
+  outline: none;
+  line-height: 37px;
+  background: transparent;
+}
+.SearchEngine .inputClass::placeholder {
+  color: rgb(241, 241, 241) !important;
+}
+@media (min-width: 576px) {
+  p {
+    font-size: 1.25em;
+  }
+}
+@media (max-width: 576px) {
+  p {
+    font-size: 0.85em;
+  }
+}
